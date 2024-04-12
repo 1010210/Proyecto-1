@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEOW CMS</title>
+    <!-- Enlaces a los archivos CSS de UIkit -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.2/css/uikit.min.css" />
+    <style>
+        /* Estilo adicional para forzar la barra de navegación a ser negra */
+        .uk-navbar-container {
+            background-color: black !important;
+            border-bottom: 5px solid #ff761a;
+            /* Agrega un borde sólido en la parte inferior */
+        }
+
+        /* Estilo para aumentar el tamaño del logo */
+        .uk-navbar-item img {
+            max-height: 90px;
+            /* Aumenta el tamaño del logo */
+            width: auto;
+        }
+
+        /* Estilo para los iconos en la barra de navegación */
+        .uk-navbar-nav li a {
+            padding: 0 20px;
+            /* Aumenta el espacio alrededor de los iconos */
+        }
+
+        /* Estilo para los iconos */
+        .uk-navbar-icon {
+            color: white;
+            font-size: 30px;
+            /* Aumenta el tamaño de los iconos */
+        }
+
+        /* Estilo para el pie de página */
+        footer {
+            background-color: black;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        /* Estilo para el contenedor principal */
+        .content-container {
+            min-height: 400px;
+        }
+
+        /* Estilo para las secciones */
+        .section-1 {
+            background-color: #fcc71b;
+            /* Color de la barra debajo de la barra de navegación */
+            padding: 20px;
+            margin-top: 0;
+            /* Mueve la sección hacia arriba para que esté más pegada a la barra de navegación */
+            border: 5px solid #000000;
+            /* Agrega un borde sólido */
+            border-top: 0;
+            /* Borde en la parte superior */
+            border-radius: 10px;
+            /* Añade bordes redondeados */
+            font-style: italic; /* Estilo de letra cursiva */
+        }
+
+        .section-1 h2 {
+            margin-top: 10px;
+            /* Ajusta el margen superior del título */
+        }
+
+        .section-1 p {
+            margin: 0;
+        }
+
+        /* Estilo para centrar contenido */
+        .uk-flex-center {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Estilo para ocultar el botón hamburguesa en dispositivos grandes */
+        @media (min-width: 960px) {
+        .uk-navbar-toggle.uk-hidden {
+            display: none !important;
+        }
+    }
+    </style>
+</head>
+
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class="uk-navbar-container" uk-navbar>
+
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-item uk-logo" href="#">
+                <img src="images/iconcms.PNG" alt="">
+            </a>
+        </div>
+        <div class="uk-navbar-right uk-visible@m">
+            <ul class="uk-navbar-nav">
+                <li><a href="#">Inicio de sesión</a></li>
+                <li><a href="#">Soporte</a></li>
+                <li><a href="#">Acerca de nosotros</a></li>
+                <li><a href="#"><span uk-icon="search" class="uk-navbar-icon"></span></a></li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right uk-hidden@m">
+            <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav"></a>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Navigation -->
+    <div id="offcanvas-nav" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+            <ul class="uk-nav uk-nav-default">
+                <li><a href="#">Inicio de sesión</a></li>
+                <li><a href="#">Soporte</a></li>
+                <li><a href="#">Acerca de nosotros</a></li>
+                <li><a href="#"><span uk-icon="search" class="uk-navbar-icon"></span> Buscar</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-1 uk-flex-center"> <!-- Añade la clase uk-flex-center para centrar -->
+        <div class="uk-container">
+            <h2>Content Management System</h2>
+        </div>
+    </div>
+
+    <!-- Contenido Principal -->
+    <div class="uk-container uk-margin-top content-container">
+        <div class="uk-child-width-1-3@m" uk-grid>
+       
+         
+        </div>
+    </div>
+
+    <!-- Secciones -->
+    <div class="new-section">
+        <div class="uk-container">
+           
+        </div>
+    </div>
+
+    <div class="new-section">
+        <div class="uk-container">
+            <h2>Libera tu creatividad, gestiona con facilidad</h2>
+            <img src="" alt="">
+        </div>
+    </div>
+    <footer class="uk-padding-remove uk-background-secondary uk-light">
+        <div class="uk-container">
+            <div class="uk-child-width-1-4@m uk-grid uk-grid-small uk-flex-center" uk-grid>
+                <div>
+                    <p class="uk-text-center">Conéctate con nosotros y descubre un mundo de creatividad.</p>
+                    <p class="uk-text-center">¡Síguenos en nuestras redes sociales para mantenerte inspirado!</p>
+                    <ul class="uk-iconnav uk-flex-center">
+                        <li><a href="#" uk-icon="facebook"></a></li>
+                        <li><a href="#" uk-icon="instagram"></a></li>
+                        <li><a href="#" uk-icon="spotify"></a></li>
+                        <li><a href="#" uk-icon="youtube"></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="uk-text-center">¿Tienes alguna pregunta o comentario? ¡Contáctanos!</p>
+                    <p class="uk-text-center">Estamos aquí para ayudarte.</p>
+                </div>
+                <div>
+                    <p class="uk-text-center">Respetamos tus derechos y tu privacidad.</p>
+                    <p class="uk-text-center">© Meow CMS, impulsando tu experiencia en la web.</p>
+                </div>
+                <div>
+                    <img src="images/iconosolo.PNG" alt="Logo" class="uk-margin-small-top uk-align-center">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    
+    <!-- Scripts de UIkit -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.2/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.2/js/uikit-icons.min.js"></script>
+</body>
+
+</html>
