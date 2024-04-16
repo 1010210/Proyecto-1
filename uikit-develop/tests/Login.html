@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form - UIkit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.5/css/uikit.min.css" />
+    <style>
+        /* Estilos personalizados */
+        .login-form {
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .login-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .login-label {
+            font-size: 16px;
+        }
+        .login-button {
+            background-color: #1b62fb;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .register-link {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="uk-container uk-flex uk-flex-center uk-flex-middle uk-height-viewport">
+    <div class="uk-card uk-card-default uk-card-body uk-width-1-3@m login-form">
+        <h3 class="uk-card-title uk-text-center login-title">Login</h3>
+        <form class="uk-form-stacked">
+            <div class="uk-margin">
+                <label class="uk-form-label login-label" for="username">Usuario</label>
+                <div class="uk-form-controls">
+                    <input class="uk-input" id="username" type="text" placeholder="Tu usuario">
+                </div>
+            </div>
+            <div class="uk-margin">
+                <label class="uk-form-label login-label" for="password">Contraseña</label>
+                <div class="uk-form-controls">
+                    <input class="uk-input" id="password" type="password" placeholder="Tu contraseña">
+                </div>
+            </div>
+            <div class="uk-margin">
+                <button class="uk-button uk-button-primary login-button" type="submit">Iniciar sesión</button>
+            </div>
+            <p class="uk-text-center register-link">¿No tienes cuenta? <a href="#">Regístrate</a></p>
+        </form>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.5/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.5/js/uikit-icons.min.js"></script>
+</body>
+</html>
+
