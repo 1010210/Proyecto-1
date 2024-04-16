@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - UIkit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.5/css/uikit.min.css" />
+    <style>
+        /* Estilos personalizados */
+        .register-form {
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .register-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .register-label {
+            font-size: 16px;
+        }
+
+        .register-button {
+            background-color: #1b62fb;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .login-link {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="uk-container uk-flex uk-flex-center uk-flex-middle uk-height-viewport">
+        <div class="uk-card uk-card-default uk-card-body uk-width-1-3@m register-form">
+            <h3 class="uk-card-title uk-text-center register-title">Registro</h3>
+            <form class="uk-form-stacked">
+                <div class="uk-margin">
+                    <label class="uk-form-label register-label" for="fullname">Nombre completo</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="fullname" type="text" placeholder="Tu nombre completo">
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label register-label" for="email">Correo electrónico</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="email" type="email" placeholder="Tu correo electrónico">
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label register-label" for="password">Contraseña</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="password" type="password" placeholder="Tu contraseña">
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <button class="uk-button uk-button-primary register-button" type="submit">Registrarse</button>
+                </div>
+                <p class="uk-text-center login-link">¿Ya tienes una cuenta? <a href="Login.html">Inicia sesión</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.5/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.7.5/js/uikit-icons.min.js"></script>
+</body>
+
+</html>
